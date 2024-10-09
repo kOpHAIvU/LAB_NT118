@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý nhân viên"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:background="#008000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Mã NV: "
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/employId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Tên NV: "
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/employName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Loại NV: "
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+
+        <RadioGroup
+            android:id="@+id/employType"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/fulltimeEmploy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chính thức"/>
+
+            <RadioButton
+                android:id="@+id/parttimeEmploy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Thời vụ"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Nhập NV"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="2521691 - Lê Hoàng Vũ"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textColor="#FFFFFF"
+        android:background="#008000" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
