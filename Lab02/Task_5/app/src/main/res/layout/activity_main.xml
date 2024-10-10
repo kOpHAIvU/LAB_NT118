@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:layout_gravity="center_vertical" />
+        <EditText
+            android:id="@+id/food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Thumbnail: "
+            android:layout_gravity="center_vertical" />
+        <Spinner
+            android:id="@+id/thumbnail"
+            android:text="None"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Promotion: "
+            android:layout_gravity="center_vertical" />
+        <CheckBox
+            android:id="@+id/promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="ADD A NEW DISH"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="22521691 - Lê Hoàng Vũ"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#550000FF"/>
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:padding="10dp"
+        android:stretchMode="columnWidth"/>
+
+</LinearLayout>

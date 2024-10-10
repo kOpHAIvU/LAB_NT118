@@ -54,6 +54,13 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
+        lv.setOnItemLongClickListener((parent, view, position, id) -> {
+            myList.remove(position);  // Xóa item tại vị trí
+            myArrayAdapter.notifyDataSetChanged();  // Cập nhật adapter
+            Toast.makeText(MainActivity.this, "Item đã bị xóa", Toast.LENGTH_SHORT).show();  // Thông báo
+            return true;  // Trả về true để đánh dấu sự kiện đã được xử lý
+        });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
